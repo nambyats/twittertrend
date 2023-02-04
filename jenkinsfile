@@ -27,7 +27,7 @@ pipeline{
 
        stage ("Sonar Analysis") {
             environment {
-               scannerHome = tool 'valaxy-sonarscanner'
+               scannerHome = tool 'sonarscanner'
             }
             steps {
                 echo '<--------------- Sonar Analysis started  --------------->'
