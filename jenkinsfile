@@ -32,7 +32,7 @@ pipeline{
             steps {
                 echo '<--------------- Sonar Analysis started  --------------->'
                 withSonarQubeEnv('valaxy-sonarqube-server') {    
-                    sh "${scannerHome}/bin/sonar-scanner -Dsonar.issuesReport.console.enable=true"
+                    sh "${scannerHome}/bin/sonar-scanner"
                 echo '<--------------- Sonar Analysis stopped  --------------->'
                 }    
                
