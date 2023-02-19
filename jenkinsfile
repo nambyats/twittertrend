@@ -107,7 +107,7 @@ pipeline{
        steps {
          script {
             echo '<--------------- Deploy Started --------------->'
-            sh './deploy.sh'
+            sh 'chmod +x ./deploy.sh && ./deploy.sh'
             echo '<--------------- Deploy Ends --------------->'
          }
        }
